@@ -1,0 +1,83 @@
+html, body 
+{
+  width: 100%;
+  height: 100%;
+  font-family: PT Sans;
+  font-size: 16px;
+}
+
+body 
+{
+    background: linear-gradient(90deg, rgb(50, 25, 25), rgb(70, 35, 25), rgb(50, 25, 25));
+    background-size: 500% 100%;
+    background-attachment: fixed;
+    animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+a
+{
+    color: rgb(0, 0, 0);
+}
+
+.myhtmltabs
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+.myhtmltabs label
+{
+    padding: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white
+}
+
+.myhtmltabs .tab h1
+{
+   font-size: 20px;
+}
+
+.myhtmltabs .tab
+{
+    width: 100%;
+    height: flex;
+    padding: 20px;
+    background-color: rgb(255, 255, 255, 1);
+    order: 1;
+    display: none;
+    border-radius: 12px;
+}
+
+.myhtmltabs input[type="radio"]
+{
+    display: none;
+}
+
+.myhtmltabs input[type='radio']:checked + label + .tab 
+{
+    display: block;
+}
+
+.myhtmltabs input[type='radio']:checked + label 
+{
+    background: rgb(240, 120, 100);
+    color: white;
+}
