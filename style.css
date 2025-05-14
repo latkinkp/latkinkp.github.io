@@ -1,35 +1,50 @@
 html, body 
 {
+  /*margin: 0;
+  padding: 0;
   width: 100%;
-  height: 100%;
+  height: 100%;*/
   font-family: PT Sans;
   font-size: 16px;
+  box-sizing: border-box;
 }
+
 
 body 
 {
-    background: linear-gradient(90deg, rgb(50, 25, 25), rgb(70, 35, 25), rgb(50, 25, 25));
-    background-size: 500% 100%;
-    background-attachment: fixed;
-    animation: gradient 30s ease infinite;
+    background: url(Images/background.png), linear-gradient(90deg, rgb(50, 25, 25), rgb(70, 35, 25), rgb(50, 25, 25));
+    background-size: 4000px 2500px, 4000px 2500px;
+    background-attachment: fixed, fixed;
+    animation-name: gradient, gradient;
+    animation-duration: 30s, 30s;
+    animation-timing-function: ease, ease;
+    animation-iteration-count: infinite, infinite;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
+
+@keyframes gradient 
+{
+    0% 
+    {
         background-position: 100% 50%;
     }
-    100% {
+    50% 
+    {
         background-position: 0% 50%;
+    }
+    100% 
+    {
+        background-position: 100% 50%;
     }
 }
 
+
+/*Ссылки чёрным цветом*/
 a
 {
     color: rgb(0, 0, 0);
 }
+
 
 .myhtmltabs
 {
@@ -39,6 +54,7 @@ a
     margin: 50px auto;
     padding: 25px;
 }
+
 
 .myhtmltabs label
 {
@@ -50,10 +66,12 @@ a
     color: white
 }
 
+
 .myhtmltabs .tab h1
 {
    font-size: 20px;
 }
+
 
 .myhtmltabs .tab
 {
@@ -66,15 +84,18 @@ a
     border-radius: 12px;
 }
 
+
 .myhtmltabs input[type="radio"]
 {
     display: none;
 }
 
+
 .myhtmltabs input[type='radio']:checked + label + .tab 
 {
     display: block;
 }
+
 
 .myhtmltabs input[type='radio']:checked + label 
 {
