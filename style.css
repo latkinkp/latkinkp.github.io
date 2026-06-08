@@ -1,0 +1,174 @@
+/* Тело ***************************************/
+html, body 
+{
+	font-family: PT Sans;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+
+body 
+{
+	background: url(Images/background.png), linear-gradient(90deg, rgb(50, 25, 25), rgb(70, 35, 25), rgb(50, 25, 25));
+	background-size: 4000px 2500px, 4000px 2500px;
+	background-attachment: fixed, fixed;
+	animation-name: gradient, gradient;
+	animation-duration: 30s, 30s;
+	animation-timing-function: ease, ease;
+	animation-iteration-count: infinite, infinite;
+	padding: 25px;
+}
+
+
+/* Градиент ***************************************/
+@keyframes gradient 
+{
+	0% 
+	{
+		background-position: 100% 50%;
+	}
+	50% 
+	{
+		background-position: 0% 50%;
+	}
+	100% 
+	{
+		background-position: 100% 50%;
+	}
+}
+
+
+/* Вкладки выбор языка ***************************************/
+.langtabs
+{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 500px;
+	margin: 25px auto;
+	padding: 0px;
+}
+
+
+.langtabs label
+{
+	padding: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 10px;
+	color: white;
+}
+
+
+.langtabs input[type="radio"]
+{
+	display: none;
+}
+
+
+.langtabs input[type='radio']:checked + label 
+{
+	background: rgb(240, 120, 100);
+	color: white;
+}
+
+
+/* Главные вкладки ***************************************/
+.maintabs
+{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 500px;
+	margin-top: 25px;
+}
+
+
+.maintabs label
+{
+	padding: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 10px;
+	color: white
+}
+
+
+.maintabs .tab
+{
+	width: 100%;
+	height: flex;
+	padding: 20px;
+	background-color: rgb(255, 255, 255, 1);
+	order: 1;
+	display: none;
+	border-radius: 10px;
+}
+
+
+.maintabs input[type="radio"]
+{
+	display: none;
+}
+
+
+.maintabs input[type='radio']:checked + label + .tab 
+{
+	display: block;
+}
+
+
+.maintabs input[type='radio']:checked + label 
+{
+	background: rgb(240, 120, 100);
+	color: white;
+}
+
+
+/* Английский и русский текст ***************************************/
+/* rutxt - скрывать, показывать при нажатии на ru */
+/* entxt - скрывать, показывать при нажатии на en */
+/* hidetxt - делать серым при нажатии на en */
+.maintabs .entxt, .rutxt
+{
+	display: none;
+}
+
+
+#en:checked ~ .maintabs .entxt
+{
+	display: inline;
+}
+
+
+#ru:checked ~ .maintabs .rutxt
+{
+	display: inline;
+}
+
+#en:checked ~ .maintabs .hidetxt
+{
+	color: silver;
+}
+
+
+#en:checked ~ .maintabs .hidetxt a
+{
+	color: silver;
+}
+
+
+a
+{
+	color: rgb(0, 0, 0);
+}
+
+
+h1
+{
+	font-size: 20px;
+}
+
+
+li
+{
+	margin-bottom: 15px;
+}
