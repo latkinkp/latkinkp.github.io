@@ -146,13 +146,13 @@ body
 
 #en:checked ~ .maintabs .hidetxt
 {
-	color: silver;
+	color: darkgray;
 }
 
 
 #en:checked ~ .maintabs .hidetxt a
 {
-	color: silver;
+	color: darkgray;
 }
 
 
