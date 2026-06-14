@@ -16,7 +16,7 @@ body
 	animation-duration: 30s, 30s;
 	animation-timing-function: ease, ease;
 	animation-iteration-count: infinite, infinite;
-	padding: 15px;
+	padding: 10px;
 }
 
 
@@ -44,14 +44,13 @@ body
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 500px;
-	margin: 25px auto;
-	padding: 0px;
+	margin: 30px auto;
 }
 
 
 .langtabs label
 {
-	padding: 5px;
+	padding: 8px;
 	font-weight: bold;
 	cursor: pointer;
 	border-radius: 10px;
@@ -84,7 +83,7 @@ body
 
 .maintabs label
 {
-	padding: 10px;
+	padding: 12px;
 	font-weight: bold;
 	cursor: pointer;
 	border-radius: 10px;
@@ -96,7 +95,7 @@ body
 {
 	width: 100%;
 	height: flex;
-	padding: 20px;
+	padding: 22px;
 	background-color: rgb(255, 255, 255, 1);
 	order: 1;
 	display: none;
