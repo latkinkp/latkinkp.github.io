@@ -20,7 +20,6 @@ body
 }
 
 
-/* Градиент ***************************************/
 @keyframes gradient 
 {
 	0% 
@@ -35,6 +34,37 @@ body
 	{
 		background-position: 100% 50%;
 	}
+}
+
+
+/* Форматирование базовых элементов ***************************************/
+a
+{
+	color: rgb(0, 0, 0);
+}
+
+
+p
+{
+	margin: 0px;
+}
+
+
+h1
+{
+	font-size: 20px;
+}
+
+
+li
+{
+	margin-bottom: 25px;
+}
+
+
+ol, ul
+{
+	padding-left: 25px
 }
 
 
@@ -152,28 +182,4 @@ body
 #en:checked ~ .maintabs .hidetxt a
 {
 	color: darkgray;
-}
-
-
-a
-{
-	color: rgb(0, 0, 0);
-}
-
-
-h1
-{
-	font-size: 20px;
-}
-
-
-li
-{
-	margin-bottom: 12px;
-}
-
-
-ol, ul
-{
-	padding-left: 25px
 }
