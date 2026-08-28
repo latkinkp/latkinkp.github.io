@@ -16,7 +16,7 @@ body
 	animation-duration: 30s, 30s;
 	animation-timing-function: ease, ease;
 	animation-iteration-count: infinite, infinite;
-	padding: 10px;
+	padding: 13px;
 }
 
 
@@ -83,7 +83,7 @@ ol, ul
 	padding: 8px;
 	font-weight: bold;
 	cursor: pointer;
-	border-radius: 10px;
+	border-radius: 20px;
 	color: white;
 }
 
@@ -116,7 +116,7 @@ ol, ul
 	padding: 12px;
 	font-weight: bold;
 	cursor: pointer;
-	border-radius: 10px;
+	border-radius: 20px;
 	color: white
 }
 
@@ -129,7 +129,7 @@ ol, ul
 	background-color: rgb(255, 255, 255, 1);
 	order: 1;
 	display: none;
-	border-radius: 10px;
+	border-radius: 20px;
 }
 
 
