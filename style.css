@@ -9,30 +9,20 @@ html, body
 
 body 
 {
-	background: linear-gradient(90deg, rgb(50, 25, 25), rgb(70, 35, 25), rgb(50, 25, 25));
-	background-size: 4000px 2500px, 4000px 2500px;
-	background-attachment: fixed, fixed;
-	animation-name: gradient, gradient;
-	animation-duration: 30s, 30s;
-	animation-timing-function: ease, ease;
-	animation-iteration-count: infinite, infinite;
+	animation: changeColor 10s ease-in-out infinite alternate;
 	padding: 13px;
 }
 
 
-@keyframes gradient 
+@keyframes changeColor
 {
 	0% 
 	{
-		background-position: 100% 50%;
-	}
-	50% 
-	{
-		background-position: 0% 50%;
+		background-color: rgb(50, 25, 25);
 	}
 	100% 
 	{
-		background-position: 100% 50%;
+		background-color: rgb(70, 35, 25);
 	}
 }
 
