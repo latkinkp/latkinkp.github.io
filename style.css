@@ -68,6 +68,14 @@ ol, ul
 }
 
 
+footer 
+{
+  text-align: center;
+  color: white;
+  opacity: 0.7;
+}
+
+
 /* Вкладки выбор языка ***************************************/
 .langtabs
 {
