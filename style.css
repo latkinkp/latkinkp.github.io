@@ -2,7 +2,7 @@
 html, body 
 {
 	font-family: PT Sans;
-	font-size:18px;
+	font-size: 18px;
 	box-sizing: border-box;
 }
 
@@ -62,7 +62,7 @@ footer
 {
   text-align: center;
   color: white;
-  opacity: 0.65;
+  opacity: 0.50;
 }
 
 
