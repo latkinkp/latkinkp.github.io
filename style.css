@@ -83,6 +83,7 @@ footer
 	cursor: pointer;
 	border-radius: 20px;
 	color: white;
+	user-select: none;
 }
 
 
@@ -115,7 +116,8 @@ footer
 	font-weight: bold;
 	cursor: pointer;
 	border-radius: 20px;
-	color: white
+	color: white;
+	user-select: none;
 }
 
 
