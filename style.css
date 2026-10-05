@@ -66,6 +66,12 @@ footer
 }
 
 
+.ghostxt
+{
+	color: darkgray;
+}
+
+
 /* Вкладки выбор языка ***************************************/
 .langtabs
 {
@@ -172,6 +178,7 @@ footer
 {
 	display: inline;
 }
+
 
 #en:checked ~ .maintabs .hidetxt
 {
