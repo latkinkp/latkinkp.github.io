@@ -28,7 +28,7 @@ function getDeltaDateEn(dateString)
 		{
 			return result;
 		}
-		result += ' ';
+		result += ' and ';
 	}
 	
 	// Добавление строки про месяцы
