@@ -4,6 +4,7 @@ html, body
 	font-family: PT Sans;
 	font-size: 18px;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 
@@ -189,4 +190,14 @@ footer
 #en:checked ~ .maintabs .hidetxt a
 {
 	color: darkgray;
+}
+
+
+/* Кнопка вверх ***************************************/
+.homeButton
+{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	opacity: 0.50;
 }
