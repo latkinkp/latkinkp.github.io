@@ -9,42 +9,66 @@
 	</head>
 	
 	<body>
-		<!-- Основное содержимое страницы -->
-		<div class="langtabs">
-		<input type="radio" id="ru" name="langtabs" checked>
-		<label for="ru">RU</label>
-		<input type="radio" id="en" name="langtabs">
-		<label for="en">EN</label>
-			<div class="maintabs">
-			
-				<!-- Вкладка CARD -->
-				<input type="radio" id="cardtab" name="maintabs" checked>
-				<label for="cardtab"><span class="entxt">BUSINESS CARD</span><span class="rutxt">ВИЗИТКА</span></label>
-				<div class="tab">
-					<p><span class="entxt">Business card text</span><span class="rutxt">Текст визитки</span></p>
-				</div>
-				
-				<!-- Вкладка SCIENCE -->
-				<input type="radio" id="sctab" name="maintabs">
-				<label for="sctab"><span class="entxt">SCIENCE</span><span class="rutxt">НАУКА</span></label>
-				<div class="tab">
-					<p><span class="entxt">Science text</span><span class="rutxt">Текст науки</span></p>
-				</div>
-				
-				<!-- Вкладка CV -->
-				<input type="radio" id="cvtab" name="maintabs">
-				<label for="cvtab"><span class="entxt">CV</span><span class="rutxt">РЕЗЮМЕ</span></label>
-				<div class="tab">
-					<p><span class="entxt">CV text</span><span class="rutxt">Текст резюме</span></p>
-		   	</div>
-		   	
-		   	<!-- Вкладка MEDIA -->
-				<input type="radio" id="mediatab" name="maintabs">
-				<label for="mediatab"><span class="entxt">MEDIA</span><span class="rutxt">СМИ</span></label>
-				<div class="tab">
-					<p><span class="entxt">Business media</span><span class="rutxt">Текст СМИ</span></p>
-				</div>
+		<!-- Элементы ввода -->
+		<input type="radio" id="ru" name="languageTabs" checked>
+		<input type="radio" id="en" name="languageTabs">
+		<input type="radio" id="tabCard" name="mainTabs" checked>
+		<input type="radio" id="tabScience" name="mainTabs">
+		<input type="radio" id="tabCV" name="mainTabs">
+		<input type="radio" id="tabMedia" name="mainTabs">
+		
+		<!-- Переключатель языков -->
+		<div class="tabs" style="text-align: right;">
+			<div class="switcher">			
+				<label for="ru">RU</label>
+				<label for="en">EN</label>
 			</div>
+		</div>
+		
+		<!-- Основное содержимое страницы -->
+		<div class="tabs">
+			<div class="switcher">
+				<label for="tabCard"><span class="entxt">Business Card</span><span class="rutxt">Визитка</span></label>
+				<label for="tabScience"><span class="entxt">Science</span><span class="rutxt">Наука</span></label>
+				<label for="tabCV"><span class="entxt">CV</span><span class="rutxt">Резюме</span></label>
+				<label for="tabMedia"><span class="entxt">Media</span><span class="rutxt">СМИ</span></label>
+			</div>
+				
+			<!-- Вкладка CARD -->
+			<div class="tab" for="tabCard">
+				<p><span class="entxt">Business card text</span><span class="rutxt">Визитка</span></p>
+				<p><span class="entxt">Business card text</span><span class="rutxt">Визитка</span></p>
+				<p><span class="entxt">Business card text</span><span class="rutxt">Визитка</span></p>
+				<p><span class="entxt">Business card text</span><span class="rutxt">Визитка</span></p>
+			</div>
+			<!-- Вкладка CARD -->
+			
+			<!-- Вкладка SCIENCE -->
+			<div class="tab" for="tabScience">
+				<p><span class="entxt">Science text</span><span class="rutxt">Текст науки</span></p>
+				<p><span class="entxt">Science text</span><span class="rutxt">Текст науки</span></p>
+				<p><span class="entxt">Science text</span><span class="rutxt">Текст науки</span></p>
+				<p><span class="entxt">Science text</span><span class="rutxt">Текст науки</span></p>
+			</div>
+			<!-- Вкладка SCIENCE -->
+			
+			<!-- Вкладка CV -->
+			<div class="tab" for="tabCV">
+				<p><span class="entxt">CV text</span><span class="rutxt">Текст резюме</span></p>
+				<p><span class="entxt">CV text</span><span class="rutxt">Текст резюме</span></p>
+				<p><span class="entxt">CV text</span><span class="rutxt">Текст резюме</span></p>
+				<p><span class="entxt">CV text</span><span class="rutxt">Текст резюме</span></p>
+		   </div>
+			<!-- Вкладка CV -->
+		   
+		   <!-- Вкладка MEDIA -->
+			<div class="tab" for="tabMedia">
+				<p><span class="entxt">Business media</span><span class="rutxt">Текст СМИ</span></p>
+				<p><span class="entxt">Business media</span><span class="rutxt">Текст СМИ</span></p>
+				<p><span class="entxt">Business media</span><span class="rutxt">Текст СМИ</span></p>
+				<p><span class="entxt">Business media</span><span class="rutxt">Текст СМИ</span></p>
+			</div>
+			<!-- Вкладка MEDIA -->
 		</div>
 
 		<!-- Футер -->

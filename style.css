@@ -1,4 +1,6 @@
-/* Тело ***************************************/
+/* Тело, фон сайта ***************************************/
+
+
 html, body 
 {
 	font-family: PT Sans;
@@ -28,7 +30,145 @@ body
 }
 
 
+/* Вкладки ***************************************/
+
+
+/* Прячем кнопку radioButton */
+input[type="radio"]
+{
+	display: none;
+}
+
+
+.switcher
+{
+	display: inline-flex;
+	background-color: rgb(255, 255, 255, 1);
+	padding: 8px;
+	border-radius: 27px;
+	user-select: none;
+}
+
+
+.tabs
+{
+	display: block;
+	max-width: 500px;
+	margin: 40px auto;
+	text-align: center;
+}
+
+
+.tabs label
+{
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 20px;
+	user-select: none;
+}
+
+
+#ru:checked ~ .tabs label[for="ru"],
+#en:checked ~ .tabs label[for="en"],
+#tabCard:checked ~ .tabs label[for="tabCard"],
+#tabScience:checked ~ .tabs label[for="tabScience"],
+#tabCV:checked ~ .tabs label[for="tabCV"],
+#tabMedia:checked ~ .tabs label[for="tabMedia"]
+{
+	background: rgb(240, 120, 100);
+}
+
+
+.tabs .tab
+{
+	display: none;
+}
+
+
+#tabCard:checked ~ .tabs .tab[for="tabCard"],
+#tabScience:checked ~ .tabs .tab[for="tabScience"],
+#tabCV:checked ~ .tabs .tab[for="tabCV"],
+#tabMedia:checked ~ .tabs .tab[for="tabMedia"]
+{
+	display: block;
+	margin: 15px auto;
+	text-align: left;
+	max-width: 500px;
+	padding: 25px;
+	background-color: rgb(255, 255, 255, 1);
+	border-radius: 20px;
+}
+
+
+/* Виды оформления текста ***************************************/
+/* rutxt - скрывать, показывать при нажатии на ru */
+/* entxt - скрывать, показывать при нажатии на en */
+/* hidetxt - делать серым при нажатии на en */
+/* ghostxt - всегда серый */
+
+
+.tabs .entxt, .rutxt
+{
+	display: none;
+}
+
+
+#en:checked ~ .tabs .entxt
+{
+	display: inline;
+}
+
+
+#ru:checked ~ .tabs .rutxt
+{
+	display: inline;
+}
+
+
+#en:checked ~ .tabs .hidetxt
+{
+	color: darkgray;
+}
+
+
+#en:checked ~ .tabs .hidetxt a
+{
+	color: darkgray;
+}
+
+
+.ghostxt
+{
+	color: darkgray;
+}
+
+
+/* Кнопка вверх ***************************************/
+
+
+.homeButton
+{
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	opacity: 0.50;
+}
+
+
+/* Футер ***************************************/
+
+
+footer 
+{
+  text-align: center;
+  color: white;
+  opacity: 0.50;
+}
+
+
 /* Форматирование базовых элементов ***************************************/
+
+
 a
 {
 	color: rgb(0, 0, 0);
@@ -56,148 +196,4 @@ li
 ol, ul
 {
 	padding-left: 25px
-}
-
-
-footer 
-{
-  text-align: center;
-  color: white;
-  opacity: 0.50;
-}
-
-
-.ghostxt
-{
-	color: darkgray;
-}
-
-
-/* Вкладки выбор языка ***************************************/
-.langtabs
-{
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 500px;
-	margin: 30px auto;
-}
-
-
-.langtabs label
-{
-	padding: 8px;
-	font-weight: bold;
-	cursor: pointer;
-	border-radius: 20px;
-	color: white;
-	user-select: none;
-}
-
-
-.langtabs input[type="radio"]
-{
-	display: none;
-}
-
-
-.langtabs input[type='radio']:checked + label 
-{
-	background: rgb(240, 120, 100);
-	color: white;
-}
-
-
-/* Главные вкладки ***************************************/
-.maintabs
-{
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 500px;
-	margin-top: 25px;
-}
-
-
-.maintabs label
-{
-	padding: 12px;
-	font-weight: bold;
-	cursor: pointer;
-	border-radius: 20px;
-	color: white;
-	user-select: none;
-}
-
-
-.maintabs .tab
-{
-	width: 100%;
-	height: flex;
-	padding: 25px;
-	background-color: rgb(255, 255, 255, 1);
-	order: 1;
-	display: none;
-	border-radius: 20px;
-}
-
-
-.maintabs input[type="radio"]
-{
-	display: none;
-}
-
-
-.maintabs input[type='radio']:checked + label + .tab 
-{
-	display: block;
-}
-
-
-.maintabs input[type='radio']:checked + label 
-{
-	background: rgb(240, 120, 100);
-	color: white;
-}
-
-
-/* Английский и русский текст ***************************************/
-/* rutxt - скрывать, показывать при нажатии на ru */
-/* entxt - скрывать, показывать при нажатии на en */
-/* hidetxt - делать серым при нажатии на en */
-.maintabs .entxt, .rutxt
-{
-	display: none;
-}
-
-
-#en:checked ~ .maintabs .entxt
-{
-	display: inline;
-}
-
-
-#ru:checked ~ .maintabs .rutxt
-{
-	display: inline;
-}
-
-
-#en:checked ~ .maintabs .hidetxt
-{
-	color: darkgray;
-}
-
-
-#en:checked ~ .maintabs .hidetxt a
-{
-	color: darkgray;
-}
-
-
-/* Кнопка вверх ***************************************/
-.homeButton
-{
-	position: fixed;
-	bottom: 40px;
-	right: 40px;
-	opacity: 0.50;
 }
