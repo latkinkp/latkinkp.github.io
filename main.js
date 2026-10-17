@@ -100,8 +100,8 @@ function getDeltaDateRu(dateString)
 
 
 // Вывод информации об опыте на английском и русском
-document.getElementById('experienceProfessionalEn').textContent = getDeltaDateEn('2013-10-01T00:00:00');
-document.getElementById('experienceProfessionalRu').textContent = getDeltaDateRu('2013-10-01T00:00:00');
+document.getElementById('experienceProfessionalEn').textContent = getDeltaDateEn('2013-10-16T00:00:00');
+document.getElementById('experienceProfessionalRu').textContent = getDeltaDateRu('2013-10-16T00:00:00');
 document.getElementById('experienceTeachingEn').textContent = getDeltaDateEn('2015-09-01T00:00:00');
 document.getElementById('experienceTeachingRu').textContent = getDeltaDateRu('2015-09-01T00:00:00');
 document.getElementById('experiencePstuEn').textContent = getDeltaDateEn('2025-09-01T00:00:00');
