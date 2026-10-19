@@ -45,7 +45,7 @@ input[type="radio"]
 	display: inline-flex;
 	background-color: rgb(255, 255, 255, 1);
 	padding: 3px;
-	border-radius: 27px;
+	border-radius: 25px;
 	user-select: none;
 }
 
@@ -63,8 +63,8 @@ input[type="radio"]
 .tabs label
 {
 	cursor: pointer;
-	padding: 6px;
-	border-radius: 20px;
+	padding: 8px;
+	border-radius: 25px;
 	user-select: none;
 }
 
