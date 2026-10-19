@@ -4,7 +4,6 @@
 html, body 
 {
 	font-family: PT Sans;
-	font-size: 18px;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
@@ -62,6 +61,8 @@ input[type="radio"]
 
 .tabs label
 {
+	display: flex;
+  	align-items: center;
 	cursor: pointer;
 	padding: 8px;
 	border-radius: 25px;
@@ -78,6 +79,8 @@ input[type="radio"]
 }
 
 
+#fontLarge:checked ~ .tabs label[for="fontLarge"],
+#fontSmall:checked ~ .tabs label[for="fontSmall"],
 #ru:checked ~ .tabs label[for="ru"],
 #en:checked ~ .tabs label[for="en"]
 {
@@ -103,6 +106,34 @@ input[type="radio"]
 	padding: 25px;
 	background-color: rgb(255, 255, 255, 1);
 	border-radius: 20px;
+}
+
+
+/* Виды размера текста ***************************************/
+
+
+#fontLarge:checked ~ .tabs h1
+{
+	font-size: 22px;
+}
+
+
+#fontSmall:checked ~ .tabs h1
+{
+	font-size: 19px;
+}
+
+
+#fontLarge:checked ~ .tabs .text
+
+{
+	font-size: 18px;
+}
+
+
+#fontSmall:checked ~ .tabs .text
+{
+	font-size: 15px;
 }
 
 
@@ -184,12 +215,6 @@ a
 p
 {
 	margin: 0px;
-}
-
-
-h1
-{
-	font-size: 22px;
 }
 
 
