@@ -44,7 +44,7 @@ input[type="radio"]
 {
 	display: inline-flex;
 	background-color: rgb(255, 255, 255, 1);
-	padding: 8px;
+	padding: 3px;
 	border-radius: 27px;
 	user-select: none;
 }
@@ -56,26 +56,32 @@ input[type="radio"]
 	max-width: 500px;
 	margin: 40px auto;
 	text-align: center;
+	user-select: none;
 }
 
 
 .tabs label
 {
 	cursor: pointer;
-	padding: 8px;
+	padding: 6px;
 	border-radius: 20px;
 	user-select: none;
 }
 
 
-#ru:checked ~ .tabs label[for="ru"],
-#en:checked ~ .tabs label[for="en"],
 #tabCard:checked ~ .tabs label[for="tabCard"],
 #tabScience:checked ~ .tabs label[for="tabScience"],
 #tabCV:checked ~ .tabs label[for="tabCV"],
 #tabMedia:checked ~ .tabs label[for="tabMedia"]
 {
 	background: rgb(240, 120, 100);
+}
+
+
+#ru:checked ~ .tabs label[for="ru"],
+#en:checked ~ .tabs label[for="en"]
+{
+	background: rgb(255, 255, 255, 0.30);
 }
 
 
