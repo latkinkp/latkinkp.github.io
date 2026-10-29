@@ -16,6 +16,12 @@ body
 }
 
 
+body::selection
+{
+	background: rgb(240, 120, 100);
+}
+
+
 @keyframes changeColor
 {
 	0% 
