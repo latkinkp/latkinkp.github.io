@@ -19,6 +19,7 @@ body
 body::selection
 {
 	background: rgb(240, 120, 100);
+	color: rgb(0, 0, 0);
 }
 
 
