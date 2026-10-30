@@ -16,13 +16,6 @@ body
 }
 
 
-body::selection
-{
-	background: rgb(240, 120, 100);
-	color: rgb(0, 0, 0);
-}
-
-
 @keyframes changeColor
 {
 	0% 
@@ -49,7 +42,7 @@ input[type="radio"]
 .switcher
 {
 	display: inline-flex;
-	background-color: rgb(255, 255, 255, 1);
+	background-color: rgb(255, 255, 255);
 	padding: 3px;
 	border-radius: 25px;
 	user-select: none;
@@ -110,7 +103,7 @@ input[type="radio"]
 	text-align: left;
 	max-width: 500px;
 	padding: 25px;
-	background-color: rgb(255, 255, 255, 1);
+	background-color: rgb(255, 255, 255);
 	border-radius: 20px;
 }
 
