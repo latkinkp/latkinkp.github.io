@@ -13,6 +13,7 @@ body
 {
 	animation: changeColor 10s ease-in-out infinite alternate;
 	padding: 13px;
+	font-size: 18px;
 }
 
 
