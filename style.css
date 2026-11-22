@@ -62,7 +62,7 @@ input[type="radio"]
 .tabs label
 {
 	display: flex;
-  	align-items: center;
+		align-items: center;
 	cursor: pointer;
 	padding: 8px;
 	border-radius: 25px;
@@ -114,13 +114,13 @@ input[type="radio"]
 
 #fontLarge:checked ~ .tabs h1
 {
-	font-size: 22px;
+	font-size: 23px;
 }
 
 
 #fontSmall:checked ~ .tabs h1
 {
-	font-size: 18px;
+	font-size: 19px;
 }
 
 
@@ -139,15 +139,15 @@ input[type="radio"]
 
 #fontLarge:checked ~ .tabs .icon
 {
-  width: 18px;
-  height: 18px;
+	width: 18px;
+	height: 18px;
 }
 
 
 #fontSmall:checked ~ .tabs .icon
 {
-  width: 15px;
-  height: 15px;
+	width: 15px;
+	height: 15px;
 }
 
 
@@ -211,15 +211,15 @@ input[type="radio"]
 
 .logo
 {
-  width: 70px;
-  height: 70px;
-  margin: 6px;
+	width: 70px;
+	height: 70px;
+	margin: 6px;
 }
 
 
 .icon
 {
-  vertical-align: center;
+	vertical-align: center;
 }
 
 
@@ -228,9 +228,9 @@ input[type="radio"]
 
 footer 
 {
-  text-align: center;
-  color: white;
-  opacity: 0.50;
+	text-align: center;
+	color: white;
+	opacity: 0.50;
 }
 
 
