@@ -30,6 +30,14 @@ body
 }
 
 
+footer 
+{
+	text-align: center;
+	color: white;
+	opacity: 0.50;
+}
+
+
 /* Вкладки ***************************************/
 
 
@@ -220,17 +228,6 @@ input[type="radio"]
 .icon
 {
 	vertical-align: center;
-}
-
-
-/* Футер ***************************************/
-
-
-footer 
-{
-	text-align: center;
-	color: white;
-	opacity: 0.50;
 }
 
 

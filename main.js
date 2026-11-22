@@ -1,4 +1,4 @@
-// Вывод строки по разности дат на английском
+// Вывод строки по разности дат на английском ***************************************
 function getDeltaDateEn(dateString)
 {
 	// Вычисление разности во времени
@@ -43,7 +43,7 @@ function getDeltaDateEn(dateString)
 }
 
 
-// Вывод строки по разности дат на русском
+// Вывод строки по разности дат на русском ***************************************
 function getDeltaDateRu(dateString)
 {
 	// Вычисление разности во времени
@@ -99,7 +99,7 @@ function getDeltaDateRu(dateString)
 }
 
 
-// Вывод информации об опыте на английском и русском
+// Вывод информации об опыте на английском и русском (тело) ***************************************
 document.getElementById('experienceProfessionalEn').textContent = getDeltaDateEn('2013-10-16T00:00:00');
 document.getElementById('experienceProfessionalRu').textContent = getDeltaDateRu('2013-10-16T00:00:00');
 document.getElementById('experienceTeachingEn').textContent = getDeltaDateEn('2015-09-01T00:00:00');
@@ -108,5 +108,5 @@ document.getElementById('experiencePstuEn').textContent = getDeltaDateEn('2025-0
 document.getElementById('experiencePstuRu').textContent = getDeltaDateRu('2025-09-01T00:00:00');
 
 
-// Получить настоящий год
+// Получить настоящий год (футер) ***************************************
 document.getElementById('year').textContent = new Date().getFullYear();
