@@ -139,15 +139,15 @@ input[type="radio"]
 
 #fontLarge:checked ~ .tabs .icon
 {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
 }
 
 
 #fontSmall:checked ~ .tabs .icon
 {
-  width: 13px;
-  height: 13px;
+  width: 15px;
+  height: 15px;
 }
 
 
@@ -214,6 +214,12 @@ input[type="radio"]
   width: 70px;
   height: 70px;
   margin: 6px;
+}
+
+
+.icon
+{
+  vertical-align: center;
 }
 
 
